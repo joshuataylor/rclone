@@ -23,6 +23,7 @@ import (
 
 	"github.com/joshuataylor/crypto/ssh"
 	"github.com/joshuataylor/crypto/ssh/knownhosts"
+	sshagent "github.com/joshuataylor/ssh-agent"
 	"github.com/pkg/sftp"
 	"github.com/rclone/rclone/fs"
 	"github.com/rclone/rclone/fs/accounting"
@@ -35,7 +36,6 @@ import (
 	"github.com/rclone/rclone/lib/env"
 	"github.com/rclone/rclone/lib/pacer"
 	"github.com/rclone/rclone/lib/readers"
-	sshagent "github.com/xanzy/ssh-agent"
 )
 
 const (

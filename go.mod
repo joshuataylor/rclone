@@ -31,6 +31,7 @@ require (
 	github.com/iguanesolutions/go-systemd/v5 v5.1.0
 	github.com/jcmturner/gokrb5/v8 v8.4.2
 	github.com/joshuataylor/crypto v0.0.0-20220720082452-7f79eed853f6
+	github.com/joshuataylor/ssh-agent v0.3.2-0.20220720083934-7b1c591b7625
 	github.com/jzelinskie/whirlpool v0.0.0-20201016144138-0675e54bb004
 	github.com/klauspost/compress v1.15.6
 	github.com/koofr/go-httpclient v0.0.0-20200420163713-93aa7c75b348
@@ -54,7 +55,6 @@ require (
 	github.com/stretchr/testify v1.7.2
 	github.com/t3rm1n4l/go-mega v0.0.0-20200416171014-ffad7fcb44b8
 	github.com/winfsp/cgofuse v1.5.1-0.20220421173602-ce7e5a65cac7
-	github.com/xanzy/ssh-agent v0.3.1
 	github.com/youmark/pkcs8 v0.0.0-20201027041543-1326539a0a0a
 	github.com/yunify/qingstor-sdk-go/v3 v3.2.0
 	go.etcd.io/bbolt v1.3.6
