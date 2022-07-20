@@ -15,7 +15,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"golang.org/x/crypto/nacl/secretbox"
+	"github.com/joshuataylor/crypto/nacl/secretbox"
 
 	"github.com/rclone/rclone/fs"
 	"github.com/rclone/rclone/fs/config/obscure"

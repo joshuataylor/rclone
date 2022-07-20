@@ -53,7 +53,7 @@ because rclone does not store any additional information on the remotes. Use of
 custom salt is effectively a second password that must be memorized.
 
 [File content](#file-encryption) encryption is performed using
-[NaCl SecretBox](https://godoc.org/golang.org/x/crypto/nacl/secretbox),
+[NaCl SecretBox](https://godoc.org/github.com/joshuataylor/crypto/nacl/secretbox),
 based on XSalsa20 cipher and Poly1305 for integrity.
 [Names](#name-encryption) (file- and directory names) are also encrypted
 by default, but this has some implications and is therefore

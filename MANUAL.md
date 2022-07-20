@@ -10270,7 +10270,7 @@ encryption from your configuration.
 
 There is no way to recover the configuration if you lose your password.
 
-rclone uses [nacl secretbox](https://godoc.org/golang.org/x/crypto/nacl/secretbox)
+rclone uses [nacl secretbox](https://godoc.org/github.com/joshuataylor/crypto/nacl/secretbox)
 which in turn uses XSalsa20 and Poly1305 to encrypt and authenticate
 your configuration with secret-key cryptography.
 The password is SHA-256 hashed, which produces the key for secretbox.
@@ -24146,7 +24146,7 @@ because rclone does not store any additional information on the remotes. Use of
 custom salt is effectively a second password that must be memorized.
 
 [File content](#file-encryption) encryption is performed using
-[NaCl SecretBox](https://godoc.org/golang.org/x/crypto/nacl/secretbox),
+[NaCl SecretBox](https://godoc.org/github.com/joshuataylor/crypto/nacl/secretbox),
 based on XSalsa20 cipher and Poly1305 for integrity.
 [Names](#name-encryption) (file- and directory names) are also encrypted
 by default, but this has some implications and is therefore

@@ -23,6 +23,7 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/joshuataylor/crypto/ssh"
 	"github.com/rclone/rclone/cmd/serve/proxy"
 	"github.com/rclone/rclone/cmd/serve/proxy/proxyflags"
 	"github.com/rclone/rclone/fs"
@@ -31,7 +32,6 @@ import (
 	"github.com/rclone/rclone/lib/file"
 	"github.com/rclone/rclone/vfs"
 	"github.com/rclone/rclone/vfs/vfsflags"
-	"golang.org/x/crypto/ssh"
 )
 
 // server contains everything to run the server
@@ -130,7 +130,7 @@ func (s *server) acceptConnections() {
 	}
 }
 
-// Based on example server code from golang.org/x/crypto/ssh and server_standalone
+// Based on example server code from github.com/joshuataylor/crypto/ssh and server_standalone
 func (s *server) serve() (err error) {
 	var authorizedKeysMap map[string]struct{}
 

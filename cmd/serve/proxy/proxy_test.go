@@ -10,12 +10,12 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/joshuataylor/crypto/ssh"
 	_ "github.com/rclone/rclone/backend/local"
 	"github.com/rclone/rclone/fs/config/configmap"
 	"github.com/rclone/rclone/fs/config/obscure"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"golang.org/x/crypto/ssh"
 )
 
 func TestRun(t *testing.T) {

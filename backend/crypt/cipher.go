@@ -18,13 +18,13 @@ import (
 	"unicode/utf8"
 
 	"github.com/Max-Sum/base32768"
+	"github.com/joshuataylor/crypto/nacl/secretbox"
+	"github.com/joshuataylor/crypto/scrypt"
 	"github.com/rclone/rclone/backend/crypt/pkcs7"
 	"github.com/rclone/rclone/fs"
 	"github.com/rclone/rclone/fs/accounting"
 	"github.com/rclone/rclone/lib/version"
 	"github.com/rfjakob/eme"
-	"golang.org/x/crypto/nacl/secretbox"
-	"golang.org/x/crypto/scrypt"
 )
 
 // Constants
